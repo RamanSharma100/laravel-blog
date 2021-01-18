@@ -22,6 +22,9 @@
           <a class="nav-link {{Request::is('admin/uploads') ? 'active' : ''}}" href="{{url('/admin/uploads')}}">Uploads</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link {{Request::is('admin/uploadpost') ? 'active' : ''}}" href="{{url('/admin/uploadpost')}}">Upload Post</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link {{Request::is('admin/users') ? 'active' : ''}}" href="{{url('/admin/users')}}">Users</a>
         </li>
         

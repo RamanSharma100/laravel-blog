@@ -47,3 +47,18 @@ Route::get("admin/dashboard", function(){
 
 // logout admin
 Route::get("admin/logout", [adminController::class,'logout'])->name('admin.logout')->middleware('loginCheck');
+
+// uploads admin
+Route::get("admin/uploads", function(){
+	return view('admin.pages.uploads');
+})->middleware('loginCheck');
+
+// upload post admin
+Route::get("admin/uploadpost", function(){
+	return view('admin.pages.uploadpost');
+})->middleware('loginCheck');
+
+// users admin
+Route::get('admin/users', function(){
+	return view('admin.pages.users');
+})->middleware('loginCheck');
